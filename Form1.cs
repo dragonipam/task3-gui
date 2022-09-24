@@ -5,6 +5,7 @@ namespace task3_gui
         public Form1()
         {
             InitializeComponent();
+            txtSentence.Text = Properties.Settings.Default.sentence.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -14,7 +15,10 @@ namespace task3_gui
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string sentence = this.txtSentence.Text;
+            Properties.Settings.Default.sentence = sentence;
+            Properties.Settings.Default.Save();
+            MessageBox.Show($"Начальная строка: {sentence}\n Конечная строка: {Logic.Compare(sentence)}", "Ответ", MessageBoxButtons.OK);
         }
     }
     public class Logic
