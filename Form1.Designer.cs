@@ -35,16 +35,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 51);
+            this.button1.Location = new System.Drawing.Point(36, 56);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Выполнить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtSentence
             // 
-            this.txtSentence.Location = new System.Drawing.Point(12, 22);
+            this.txtSentence.Location = new System.Drawing.Point(36, 27);
             this.txtSentence.Name = "txtSentence";
             this.txtSentence.Size = new System.Drawing.Size(130, 23);
             this.txtSentence.TabIndex = 1;
@@ -52,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 4);
+            this.label1.Location = new System.Drawing.Point(57, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 15);
             this.label1.TabIndex = 2;
@@ -63,7 +64,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(161, 85);
+            this.ClientSize = new System.Drawing.Size(206, 93);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSentence);
             this.Controls.Add(this.button1);
